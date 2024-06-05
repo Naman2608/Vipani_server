@@ -1,4 +1,4 @@
-# Vipani_Server - MERN E-COMMERCE SERVER 2024
+# Vipani_Server - MERN E-COMMERCE SERVER
 
 Hi! My name is **Naman Chhabra**
 
