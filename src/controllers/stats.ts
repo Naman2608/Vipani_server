@@ -333,14 +333,17 @@ export const getBarCharts = TryCatch(async (req, res, next) => {
       ]);
     const productCount = getChartData({
       length: 6,
+      today,
       docArr: lastSixMonthProducts,
     });
     const usersCount = getChartData({
       length: 6,
+      today,
       docArr: lastSixMonthUsers,
     });
     const orderCount = getChartData({
       length: 12,
+      today,
       docArr: lastTwelveMonthOrders,
     });
     charts = {
@@ -384,19 +387,23 @@ export const getLineCharts = TryCatch(async (req, res, next) => {
     ]);
     const productCount = getChartData({
       length: 12,
+      today,
       docArr: lastTwelveMonthProducts,
     });
     const usersCount = getChartData({
       length: 12,
+      today,
       docArr: lastTwelveMonthUsers,
     });
     const discount = getChartData({
       length: 12,
+      today,
       docArr: lastTwelveMonthOrders,
       property: "discount",
     });
     const revenue = getChartData({
       length: 12,
+      today,
       docArr: lastTwelveMonthOrders,
       property: "total",
     });

@@ -98,14 +98,19 @@ interface MyDocument extends Document {
 }
 type FuncProps = {
   length: number;
-  docArr: MyDocument[];
+  docArr: any;
   property?: "discount" | "total";
+  today: Date;
 };
 
-export const getChartData = ({ length, docArr, property }: FuncProps) => {
+export const getChartData = ({
+  length,
+  docArr,
+  property,
+  today,
+}: FuncProps) => {
   const data: number[] = new Array(length).fill(0);
-  const today = new Date();
-  docArr.forEach((i) => {
+  docArr.forEach((i: { [x: string]: any; createdAt: any }) => {
     const creationDate = i.createdAt;
     const monthDiff = (today.getMonth() - creationDate.getMonth() + 12) % 12;
 
