@@ -1,6 +1,6 @@
 # Vipani_Server - MERN E-COMMERCE SERVER 2024
 
-Hi! My name is **Naman Chhabra**, I have created this tutorial to teach MERN Stack for free on YouTube.
+Hi! My name is **Naman Chhabra**
 
 # Install Dependencies
 
